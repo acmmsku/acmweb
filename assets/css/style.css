@@ -343,6 +343,11 @@ h1, h2, h3, h4 {
 .split-body p { margin-bottom: 16px; }
 .split-body p:last-child { margin-bottom: 0; }
 
+.chapter-vitals { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-top: 24px; }
+.chapter-vitals-item { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-md); padding: 14px 16px; }
+.chapter-vitals-label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-faint); margin-bottom: 4px; }
+.chapter-vitals-value { font-size: 15px; font-weight: 600; color: var(--ink); }
+
 .team-photo-frame {
   position: relative; width: 100%; aspect-ratio: 4 / 5;
   border-radius: var(--radius-lg); overflow: hidden;
