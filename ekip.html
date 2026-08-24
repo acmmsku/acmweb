@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ekibimiz — ACM MSKÜ Student Chapter</title>
+<meta name="description" content="Danışmanımızdan komitelere; ACM MSKÜ Student Chapter'ı yürüten ekip.">
+
+<!-- Fontshare: Clash Display (başlıklar) -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+<!-- Google Fonts: Lexend (gövde metni / arayüz) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="assets/img/logo/acmshortcolour.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-key="meta.title.team">
+
+<a class="skip-link" href="#icerik" data-i18n="skip.link">İçeriğe geç</a>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#anasayfa" class="brand" aria-label="ACM MSKÜ anasayfa">
+      <img class="brand-logo" src="assets/img/logo/acmshortcolour.svg" alt="ACM">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html#anasayfa" class="nav-link" data-i18n="nav.home">Anasayfa</a></li>
+        <li class="has-dropdown">
+          <a href="hakkimizda.html" class="nav-link"><span data-i18n="nav.about">Hakkımızda</span> <svg class="chev" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <ul class="dropdown">
+            <li><a href="hakkimizda.html#acm-nedir" data-i18n="nav.about.acm">ACM Nedir?</a></li>
+            <li><a href="hakkimizda.html#biz-kimiz" data-i18n="nav.about.us">Biz Kimiz</a></li>
+            <li><a href="hakkimizda.html#misyon-vizyon" data-i18n="nav.about.mv" data-i18n-html>Misyon &amp; Vizyon</a></li>
+          </ul>
+        </li>
+        <li><a href="ekip.html" class="nav-link" data-i18n="nav.about.team">Ekip</a></li>
+        <li><a href="etkinlikler.html" class="nav-link" data-i18n="nav.events">Etkinlikler</a></li>
+        <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="iletisim.html" class="nav-link" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+      <div class="lang-toggle" role="group" aria-label="Dil seçimi / Language">
+        <button type="button" class="lang-btn is-active" data-lang="tr">TR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="index.html#uye-ol" class="btn btn-primary btn-nav" data-i18n="nav.join">Üye Ol</a>
+    </nav>
+  </div>
+</header>
+
+<main id="icerik">
+
+  <!-- ============ EKİP ============ -->
+  <section id="board" class="section section--tint section--top">
+
+    <div class="section-head section-head--solo" data-reveal>
+      <h2 class="section-title-solo" data-i18n="team.title">Ekibimiz</h2>
+    </div>
+
+    <!-- TODO: Aşağıdaki linkedin.com/, mailto: ve github.com/ linklerini gerçek bilgilerle güncelleyin -->
+
+    <div class="sponsor-card" data-reveal>
+      <div class="sponsor-photo">
+        <span class="initials">CÇ</span>
+        <img src="assets/img/board/cihat.jpeg" alt="" onerror="this.remove()">
+      </div>
+      <div class="sponsor-body">
+        <div class="sponsor-main">
+          <span class="tiny-label" data-i18n="team.sponsor.label">Danışmanımız</span>
+          <h3 class="sponsor-name">Dr. Cihat Çetinkaya</h3>
+          <span class="person-role" data-i18n="team.sponsor.role">Yazılım Mühendisliği Bölüm Başkanı · ACM Professional Member</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="#" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="#" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="#" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+        <div class="sponsor-focus">
+          <span class="tiny-label" data-i18n="team.sponsor.focusLabel">Çalışma Alanları</span>
+          <p data-i18n="team.sponsor.bio">
+            Muğla Sıtkı Koçman Üniversitesi Yazılım Mühendisliği Bölüm Başkanı olan Dr. Çetinkaya'nın
+            araştırmaları yazılım tanımlı ağlar (SDN), adaptif video akışı (DASH), bilgisayar ağları ve
+            P2P/dağıtık sistemler üzerine yoğunlaşıyor.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="people-grid" data-reveal>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">MG</span><img src="assets/img/board/mazlumemregirgin.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Mazlum Emre Girgin</h4>
+          <span class="person-role" data-i18n="roles.chair">Başkan</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/mazlum-emre-girgin/" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:mazlumemregirgin.dev@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/mazlumemregirgin" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@mazlumemregirgin" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">NO</span><img src="assets/img/board/nuriokumus.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Nuri Okumuş</h4>
+          <span class="person-role" data-i18n="roles.viceChair">Başkan Yardımcısı</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/nuriokumus/" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:nuriokmus@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/NuriOkumus" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@nuriokmus" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">AÜ</span><img src="assets/img/board/korayurun.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Ali Koray Ürün</h4>
+          <span class="person-role" data-i18n="roles.treasurer">Sayman</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/korayurun" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:korayurun07@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/korayUrun" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@korayurun07" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="people-grid" data-reveal>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">ÖK</span><img src="assets/img/board/oyku.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Öykü Kaman</h4>
+          <span class="person-role" data-i18n="roles.mediaCommittee" data-i18n-html>Medya, Tasarım &amp; PR Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="#" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="#" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="#" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">ŞB</span><img src="assets/img/board/seyma.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Şeyma Büyükaydın</h4>
+          <span class="person-role" data-i18n="roles.mediaCommittee" data-i18n-html>Medya, Tasarım &amp; PR Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/%C5%9Feyma-b%C3%BCy%C3%BCkayd%C4%B1n" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:seymabuyukaydin7@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/SheimaShey" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@seymabuyukaydin7" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">SD</span><img src="assets/img/board/serdardedebas.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Serdar Dedebaş</h4>
+          <span class="person-role" data-i18n="roles.mediaCommittee" data-i18n-html>Medya, Tasarım &amp; PR Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/serdar-dedebaş" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:serdardedebas1@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/Serdar1048" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@serdardedebas1" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="people-grid" data-reveal>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">SS</span><img src="assets/img/board/sumeyye.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Sümeyye Saray</h4>
+          <span class="person-role" data-i18n="roles.sponsorshipCommittee">Sponsorluk Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="#" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="#" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="#" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">HE</span><img src="assets/img/board/sefa.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Hüseyin Sefa Endes</h4>
+          <span class="person-role" data-i18n="roles.sponsorshipCommittee">Sponsorluk Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/sefa-endes-a57654334/" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:sefaendes@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/sefaend" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="people-grid" data-reveal>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">ED</span><img src="assets/img/board/ebru.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Ebru Deniz</h4>
+          <span class="person-role" data-i18n="roles.organizationCommittee">Organizasyon Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://linkedin.com/in/ebru-deniz" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:ebruudnz00@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/ebrudeniz" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">BK</span><img src="assets/img/board/berrakoc.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Berra Koç</h4>
+          <span class="person-role" data-i18n="roles.organizationCommittee">Organizasyon Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/berrakoc/" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:kocberra03@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/berrakoc" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+            <a class="person-link person-link--medium" href="https://medium.com/@kocberra3" target="_blank" rel="noopener" data-i18n-aria="aria.medium" aria-label="Medium profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.38-2.88-3.38-6.42s1.51-6.42 3.38-6.42 3.38 2.88 3.38 6.42zM24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75c.66 0 1.19 2.58 1.19 5.75z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">BK</span><img src="assets/img/board/bunyamin.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Bünyamin Köksal</h4>
+          <span class="person-role" data-i18n="roles.organizationCommittee">Organizasyon Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/b%C3%BCnyamin-k%C3%B6ksal-55b424249/" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:bunyaminkoksal32@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/bunyaminkoksal" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="people-grid people-grid--last" data-reveal>
+
+      <div class="person-card">
+        <div class="person-photo"><span class="initials">BÖ</span><img src="assets/img/board/buseselin.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="person-info">
+          <h4 class="person-name">Buse Selin Özmen</h4>
+          <span class="person-role" data-i18n="roles.adminCommittee">İdari İşler Komitesi</span>
+          <div class="person-links">
+            <a class="person-link person-link--linkedin" href="https://www.linkedin.com/in/buse-selin-%C3%B6zmen-447675192" target="_blank" rel="noopener" data-i18n-aria="aria.linkedin" aria-label="LinkedIn profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
+            <a class="person-link person-link--mail" href="mailto:selin.8.buse@gmail.com" data-i18n-aria="aria.mail" aria-label="E-posta gönder"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 6L11.4 12.1C11.7556 12.36 12.2444 12.36 12.6 12.1L21 6M4 5H20C20.5523 5 21 5.44772 21 6V18C21 18.5523 20.5523 19 20 19H4C3.44772 19 3 18.5523 3 18V6C3 5.44772 3.44772 5 4 5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="person-link person-link--github" href="https://github.com/Buseselin" target="_blank" rel="noopener" data-i18n-aria="aria.github" aria-label="GitHub profili"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo-acm" src="assets/img/logo/acm-logo.png" alt="ACM">
+      <span class="footer-divider" aria-hidden="true"></span>
+      <img class="footer-logo" src="assets/img/logo/acmlongcolour.svg" alt="ACM MSKÜ">
+    </div>
+    <nav class="footer-links" aria-label="Alt bilgi bağlantıları">
+      <a href="index.html#anasayfa" data-i18n="nav.home">Anasayfa</a>
+      <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
+      <a href="ekip.html" data-i18n="nav.about.team">Ekip</a>
+      <a href="etkinlikler.html" data-i18n="nav.events">Etkinlikler</a>
+      <a href="blog.html" data-i18n="nav.blog">Blog</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+      <a href="index.html#uye-ol" data-i18n="nav.join">Üye Ol</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> ACM MSKÜ Student Chapter. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></span>
+    <span data-i18n="footer.recognized">Bu topluluk, Association for Computing Machinery'nin resmi tanıdığı bir Student Chapter'dır.</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

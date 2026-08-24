@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blog — ACM MSKÜ Student Chapter</title>
+<meta name="description" content="ACM MSKÜ Student Chapter'ın Medium'da yayınladığı teknik makaleler ve yazılar.">
+
+<!-- Fontshare: Clash Display (başlıklar) -->
+<link rel="preconnect" href="https://api.fontshare.com">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap" rel="stylesheet">
+
+<!-- Google Fonts: Lexend (gövde metni / arayüz) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="icon" href="assets/img/logo/acmshortcolour.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-key="meta.title.blog">
+
+<a class="skip-link" href="#icerik" data-i18n="skip.link">İçeriğe geç</a>
+
+<header class="nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="index.html#anasayfa" class="brand" aria-label="ACM MSKÜ anasayfa">
+      <img class="brand-logo" src="assets/img/logo/acmshortcolour.svg" alt="ACM">
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="index.html#anasayfa" class="nav-link" data-i18n="nav.home">Anasayfa</a></li>
+        <li class="has-dropdown">
+          <a href="hakkimizda.html" class="nav-link"><span data-i18n="nav.about">Hakkımızda</span> <svg class="chev" width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <ul class="dropdown">
+            <li><a href="hakkimizda.html#acm-nedir" data-i18n="nav.about.acm">ACM Nedir?</a></li>
+            <li><a href="hakkimizda.html#biz-kimiz" data-i18n="nav.about.us">Biz Kimiz</a></li>
+            <li><a href="hakkimizda.html#misyon-vizyon" data-i18n="nav.about.mv" data-i18n-html>Misyon &amp; Vizyon</a></li>
+          </ul>
+        </li>
+        <li><a href="ekip.html" class="nav-link" data-i18n="nav.about.team">Ekip</a></li>
+        <li><a href="etkinlikler.html" class="nav-link" data-i18n="nav.events">Etkinlikler</a></li>
+        <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+        <li><a href="iletisim.html" class="nav-link" data-i18n="nav.contact">İletişim</a></li>
+      </ul>
+      <div class="lang-toggle" role="group" aria-label="Dil seçimi / Language">
+        <button type="button" class="lang-btn is-active" data-lang="tr">TR</button>
+        <button type="button" class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="index.html#uye-ol" class="btn btn-primary btn-nav" data-i18n="nav.join">Üye Ol</a>
+    </nav>
+  </div>
+</header>
+
+<main id="icerik">
+
+  <!-- ============ BLOG ============ -->
+  <section id="blog" class="section section--top">
+    <div class="section-head" data-reveal>
+      <span class="kicker" data-i18n="blog.kicker">Blog</span>
+      <h2 data-i18n="blog.title">Medium'daki Yazılarımız</h2>
+      <p class="section-lead" data-i18n="blog.lead">
+        Chapter üyelerimizin yazdığı teknik makaleleri, etkinlik özetlerini ve deneyim paylaşımlarını
+        Medium üzerinden yayınlıyoruz.
+      </p>
+    </div>
+    <div class="blog-grid">
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/seyma_flutter.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>What I Learned Building a Real-World Mobile App with Flutter</h3>
+          <p>
+            I actually met Flutter a bit before my internship, but that exposure was quite limited. The
+            internship was my first chance to use Flutter in a real project — I worked on the frontend,
+            building different screens and shared components while adapting to the existing project structure.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/seyma.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Şeyma Büyükaydın</span>
+              <span class="blog-card-date">20 Ağustos 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@seymabuyukaydin7/what-i-learned-building-a-real-world-mobile-app-with-flutter-eea90b9ccbf7" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/berra_texttosql.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>I Built a Text-to-SQL System. The Hard Part Wasn't the SQL.</h3>
+          <p>
+            How I built a natural-language database assistant that refuses dangerous queries, checks its
+            own answers, and tells you how much to trust them — I wanted to show more than "I can call
+            an API," but that I think about what happens after the model gives an answer.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/berrakoc.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Berra Koç</span>
+              <span class="blog-card-date">13 Ağustos 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@kocberra3/i-built-a-text-to-sql-system-the-hard-part-wasnt-the-sql-1d210cb4b9d3" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/sumeyye_vit.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>ViT vs Swin Transformer: Global Attention vs Windowed Attention — A Small Experiment on CIFAR-10</h3>
+          <p>
+            In the first post of this series, ConvNeXt kept coming back to one comparison point: Swin
+            Transformer. This post asks a more basic question: what made Swin necessary in the first
+            place, when Vision Transformer already existed a year earlier?
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/sumeyye.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Sümeyye Saray</span>
+              <span class="blog-card-date">23 Temmuz 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@sumeyyesaray478/vit-vs-swin-transformer-global-attention-vs-windowed-attention-a-small-experiment-on-cifar-10-1e149b57029a" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/sumeyye_resnet.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>ResNet-50 vs EfficientNet-B3 vs ConvNeXt-T: A Small Transfer Learning Experiment on CIFAR-10</h3>
+          <p>
+            Most people pick a backbone the same way: whichever one shows up first in a tutorial, or
+            whichever one "everyone" seems to be using. I ran a controlled experiment instead — same
+            dataset, same hyperparameters, three backbones trained side by side so it would actually mean something.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/sumeyye.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Sümeyye Saray</span>
+              <span class="blog-card-date">17 Temmuz 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@sumeyyesaray478/resnet-50-vs-efficientnet-b3-vs-convnext-t-a-small-transfer-learning-experiment-on-cifar-10-ddd32ae07030" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/koray_apigateway.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>API Gateway: The Traffic Cop of the Microservices World</h3>
+          <p>
+            Collapsing the chaos of dozens of services into a single door — and bringing it to life with .NET.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/korayurun.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Ali Koray Ürün</span>
+              <span class="blog-card-date">6 Temmuz 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@korayurun07/api-gateway-the-traffic-cop-of-the-microservices-world-7dbb3f8fc3c6" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/serdar_densenet.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>DenseNet: The Network Where No Layer Forgets Another</h3>
+          <p>
+            In ResNet, each layer talks directly only to the one before it. But what if every layer
+            talked directly to all the layers before it? That is exactly the idea DenseNet is built on,
+            and it won the Best Paper Award at CVPR 2017.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/serdardedebas.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Serdar Dedebaş</span>
+              <span class="blog-card-date">1 Temmuz 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@serdardedebas1/densenet-the-network-where-no-layer-forgets-another-e56904c02501" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/serdar_convnext.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>ConvNeXt: A ConvNet Wakes Up in the 2020s</h3>
+          <p>
+            When Swin Transformer arrived, there was a feeling in the air: the future of computer vision
+            belonged to attention. A group of researchers at Facebook AI Research asked a simple but
+            uncomfortable question: do these gains really come from attention — or from everything else around the Transformer?
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/serdardedebas.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Serdar Dedebaş</span>
+              <span class="blog-card-date">27 Haziran 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@serdardedebas1/convnext-a-convnet-wakes-up-in-the-2020s-788454a0580a" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/serdar_alexnet.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>AlexNet: The Architecture That Started the Deep Learning Revolution</h3>
+          <p>
+            Almost everything we talk about today — Vision Transformers, ResNet, YOLO, segmentation
+            models, even the giant networks that generate images — traces back to a single moment in
+            2012, when AlexNet won the ImageNet competition by such a wide margin that computer vision changed direction overnight.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/serdardedebas.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Serdar Dedebaş</span>
+              <span class="blog-card-date">26 Haziran 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@serdardedebas1/alexnet-the-architecture-that-started-the-deep-learning-revolution-08e5634985b1" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/mazlum_php.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>The Power of Dying Young: PHP's Blueprint for Scalable Backend Architecture</h3>
+          <p>
+            I've been writing Java and Go for a while now. Both languages taught me to think of a
+            backend service as a living process that stays alive waiting for the next request. Then I
+            started learning PHP, and I had a genuinely confusing moment.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/mazlumemregirgin.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Mazlum Emre Girgin</span>
+              <span class="blog-card-date">19 Mart 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@mazlumemregirgin/the-power-of-dying-young-phps-blueprint-for-scalable-backend-architecture-a6cc4dd6c21a" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/nuri_agent.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>Tek Kişilik Dev Kadro: Claude Code ve "Agent Teams" ile Yazılım Geliştirmenin Geleceği</h3>
+          <p>
+            Yazılım dünyasında kartlar yeniden dağıtılıyor. Artık sadece bir yapay zeka asistanınız yok;
+            projeniz için 7/24 çalışan, uzmanlaşmış ve otonom bir dijital geliştirme ekibiniz var.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/nuriokumus.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Nuri Okumuş</span>
+              <span class="blog-card-date">6 Şubat 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@nuriokmus/tek-ki%C5%9Filik-dev-kadro-claude-code-ve-agent-teams-ile-yaz%C4%B1l%C4%B1m-geli%C5%9Ftirmenin-gelece%C4%9Fi-cdd89eab5f63" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/koray_nginx.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>Understanding NGINX Architecture</h3>
+          <p>
+            NGINX stands as a cornerstone of modern web infrastructure, renowned for handling high
+            concurrency with minimal resources. This guide walks through web server fundamentals,
+            NGINX's event-driven architecture, and its roles as a reverse proxy and load balancer.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/korayurun.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Ali Koray Ürün</span>
+              <span class="blog-card-date">12 Ocak 2026</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@korayurun07/mastering-nginx-from-basics-to-advanced-architecture-bc59f0d89893" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/koray_middleman.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>Middleman of the Network — Forward and Reverse Proxy</h3>
+          <p>
+            The first rule of modern backend design is simple: never connect your server directly to the
+            internet. This is where Proxy Servers come in — sitting between the client and the server,
+            filtering traffic and distributing the load.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/korayurun.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Ali Koray Ürün</span>
+              <span class="blog-card-date">13 Aralık 2025</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@korayurun07/middleman-of-the-network-forward-and-reverse-proxy-a567f8102e2a" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/mazlum_cloudflare.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>How a Single Line of Code Crashed the Internet: Cloudflare, Rust, and the Infamous unwrap() Error</h3>
+          <p>
+            On November 18, 2025, the internet suddenly had a big problem — popular apps like ChatGPT,
+            Spotify, and X stopped working. Everyone thought it was a cyber attack, but the real reason
+            was a very specific technical detail: the unwrap() function in the Rust programming language.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/mazlumemregirgin.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Mazlum Emre Girgin</span>
+              <span class="blog-card-date">10 Aralık 2025</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@mazlumemregirgin/how-a-single-line-of-code-crashed-the-internet-cloudflare-rust-and-the-infamous-unwrap-error-b37ded113d86" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card" data-reveal>
+        <div class="blog-card-cover"><img src="assets/img/medium/mazlum_tls.webp" alt=""></div>
+        <div class="blog-card-body">
+          <h3>From HTTP to HTTPS: How I Secured My Java Spring Boot Backend with TLS</h3>
+          <p>
+            When you're close to deploying your backend, one of the most important questions suddenly
+            hits you: "Wait… how secure is my API really?" I was using plain HTTP, which meant that all
+            the sensitive data in my request headers, including my JWT token, was being sent in clear text over the network.
+          </p>
+          <div class="blog-card-meta">
+            <img class="blog-card-avatar" src="assets/img/board/mazlumemregirgin.jpeg" alt="">
+            <div class="blog-card-meta-text">
+              <span class="blog-card-author">Mazlum Emre Girgin</span>
+              <span class="blog-card-date">19 Kasım 2025</span>
+            </div>
+          </div>
+          <a href="https://medium.com/@mazlumemregirgin/from-http-to-https-how-i-secured-my-java-spring-boot-backend-with-tls-828888db91d8" class="btn btn-soft" target="_blank" rel="noopener">
+            <span data-i18n="blog.readMore">Medium'da Okumaya Devam Et</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo-acm" src="assets/img/logo/acm-logo.png" alt="ACM">
+      <span class="footer-divider" aria-hidden="true"></span>
+      <img class="footer-logo" src="assets/img/logo/acmlongcolour.svg" alt="ACM MSKÜ">
+    </div>
+    <nav class="footer-links" aria-label="Alt bilgi bağlantıları">
+      <a href="index.html#anasayfa" data-i18n="nav.home">Anasayfa</a>
+      <a href="hakkimizda.html" data-i18n="nav.about">Hakkımızda</a>
+      <a href="ekip.html" data-i18n="nav.about.team">Ekip</a>
+      <a href="etkinlikler.html" data-i18n="nav.events">Etkinlikler</a>
+      <a href="blog.html" data-i18n="nav.blog">Blog</a>
+      <a href="iletisim.html" data-i18n="nav.contact">İletişim</a>
+      <a href="index.html#uye-ol" data-i18n="nav.join">Üye Ol</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year"></span> ACM MSKÜ Student Chapter. <span data-i18n="footer.rights">Tüm hakları saklıdır.</span></span>
+    <span data-i18n="footer.recognized">Bu topluluk, Association for Computing Machinery'nin resmi tanıdığı bir Student Chapter'dır.</span>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
