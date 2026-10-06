@@ -112,6 +112,30 @@ h1, h2, h3, h4 {
 .quicklink-card .link-arrow { margin-top: 4px; pointer-events: none; }
 .quicklink-card:hover .link-arrow { border-color: var(--blue-500); }
 
+/* ---------- Homepage upcoming events ---------- */
+.home-events-section { padding-top: 0; }
+.home-events-head {
+  display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.home-events-head h2 { font-size: clamp(28px, 3.4vw, 38px); }
+.home-events-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
+.home-event-card {
+  display: flex; align-items: center; gap: 22px; padding: 18px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-lg);
+  transition: all .3s var(--ease);
+}
+.home-event-card:hover { border-color: var(--blue-400); box-shadow: var(--shadow-md); transform: translateY(-4px); }
+.home-event-cover {
+  width: 104px; aspect-ratio: 4 / 5; border-radius: var(--radius-md); overflow: hidden;
+  background: var(--blue-50); flex-shrink: 0;
+}
+.home-event-cover img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.home-event-body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.home-event-date { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--blue-500); }
+.home-event-body h3 { font-size: 18px; }
+.home-event-info { font-size: 14px; color: var(--ink-soft); }
+
 /* ---------- Homepage featured article (Medium) ---------- */
 .featured-section { padding-top: 0; }
 .featured-card {
@@ -283,7 +307,6 @@ h1, h2, h3, h4 {
 .hero-social-link--linkedin { color: #0A66C2; }
 .hero-social-link--mail { color: #F2994A; }
 .hero-social-link--instagram { color: #C13584; }
-.hero-social-link--github { color: var(--ink-soft); }
 .hero-social-link--medium { color: #000; }
 
 /* ==========================================================================
@@ -484,6 +507,13 @@ h1, h2, h3, h4 {
 .blog-card-date { font-size: 12px; color: var(--ink-faint); }
 .blog-card-body .btn { align-self: flex-start; }
 
+/* Etkinlik kartları (blog-card üzerine) */
+.event-card-cover { aspect-ratio: 4 / 5; }
+.event-card .blog-card-body p { -webkit-line-clamp: unset; }
+.event-card .blog-card-body .btn { margin-top: auto; }
+.event-card-meta { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13.5px; font-weight: 600; color: var(--blue-600); }
+.event-card-meta li { display: inline-flex; align-items: center; gap: 6px; }
+
 /* ==========================================================================
    JOIN (Üye Ol)
    ========================================================================== */
@@ -633,6 +663,7 @@ h1, h2, h3, h4 {
 
   .quicklinks-grid { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  .home-events-grid { grid-template-columns: 1fr; }
 
   .people-grid { grid-template-columns: repeat(auto-fit, minmax(150px, 220px)); gap: 16px; }
   .join-form-row { grid-template-columns: 1fr; }
