@@ -9,6 +9,10 @@ const TRANSLATIONS = {
     'meta.title.events': "Etkinlikler · ACM MSKÜ Student Chapter",
     'meta.title.contact': "İletişim · ACM MSKÜ Student Chapter",
     'meta.title.blog': "Blog · ACM MSKÜ Student Chapter",
+    'meta.title.ev.debut': "ACM Debut · ACM MSKÜ Student Chapter",
+    'meta.title.ev.movie': "ACM Movie Night · ACM MSKÜ Student Chapter",
+    'meta.title.ev.riselab': "Research Bridge: RISE Lab x MED · ACM MSKÜ Student Chapter",
+    'meta.title.ev.teknopark': "İzmir Teknopark Teknik Gezi · ACM MSKÜ Student Chapter",
     'skip.link': "İçeriğe geç",
 
     'nav.home': "Anasayfa",
@@ -85,27 +89,67 @@ const TRANSLATIONS = {
     'aria.linkedin': "LinkedIn profili",
     'aria.instagram': "Instagram profili",
     'aria.medium': "Medium profili",
+    'aria.github': "GitHub profili",
 
     'events.kicker': "Etkinlikler",
     'events.title': "Yaklaşan Etkinlikler",
-    'events.lead': "İlk etkinliklerimizle geliyoruz! Tanışmak, yarışmak ve birlikte film izlemek için 7 Ekim'de herkesi bekliyoruz.",
     'events.date.oct7': "7 Ekim 2026, Çarşamba",
     'events.date.oct7.short': "7 Ekim · Çarşamba",
     'events.all': "Tüm Etkinlikleri Gör",
     'events.instagram': "Instagram'da Gör",
+    'events.lead': "Atölyelerden teknik gezilere, topluluğumuzun yaklaşan etkinliklerini buradan takip edebilirsin.",
+    'home.events.title': "Yaklaşan ve Son Etkinlikler",
+    'events.date.oct15': "15 Ekim 2026, Perşembe",
+    'events.date.oct15.short': "15 Ekim · Perşembe",
+    'events.date.oct23': "23 Ekim 2026, Cuma",
+    'events.date.oct23.short': "23 Ekim · Cuma",
+    'events.tag.upcoming': "Yaklaşan",
+    'events.tag.past': "Geçmiş",
+    'events.details': "Detayları Gör",
+    'events.past.kicker': "Arşiv",
+    'events.past.title': "Geçmiş Etkinlikler",
+    'events.past.lead': "Gerçekleştirdiğimiz etkinliklerin fotoğraflarına ve detaylarına göz at.",
+    'events.teknopark.title': "İzmir Teknopark Demo Day ve Teknik Gezi",
+    'events.teknopark.body': "Teknoloji ve girişimcilik ekosistemini yerinde deneyimliyoruz! İYTE Kütüphanesi'nde gerçekleşecek İzmir Teknopark Demo Day'e katıldıktan sonra Teknopark içerisindeki bir şirketin ofisini ziyaret ederek sektörü yakından tanıyacağız. Kontenjanlar sınırlı!",
+    'events.teknopark.deadline': "Son başvuru: 16 Ekim, 23.59",
+    'events.riselab.title': "Research Bridge: RISE Lab x MED",
+    'ev.back': "Tüm Etkinlikler",
+    'ev.past': "Geçmiş Etkinlik",
+    'ev.upcoming': "Yaklaşan Etkinlik",
+    'ev.teknopark.p1': "Teknoloji ve girişimcilik ekosistemini yerinde deneyimleyeceğimiz, İzmir Teknopark Demo Day katılımı ve ofis ziyareti içeren teknik gezimize gidiyoruz!",
+    'ev.teknopark.p2': "İYTE Kütüphanesi'nde gerçekleşecek Demo Day heyecanına ortak olduktan sonra, Teknopark içerisindeki bir şirketin ofisini ziyaret ederek sektörü yakından tanıma fırsatı bulacağız. Kontenjanlar sınırlı!",
+    'ev.teknopark.prog1': "Demo Day: İYTE Kütüphanesi",
+    'ev.teknopark.prog2': "Teknopark'ta bir şirketin ofis ziyareti",
+    'ev.teknopark.sponsors': "Gezimizin ulaşımı, Muğla Gençlik Yılı kapsamında Muğla Valiliği tarafından sağlanan otobüsle gerçekleşiyor. Desteklerinden dolayı teşekkür ederiz.",
+    'ev.sponsors.kicker': "Destekleyenler",
+    'ev.sponsors.title': "Sponsorlarımız",
+    'ev.program': "Program",
+    'ev.instagram': "Duyuru Postunu Gör",
+    'ev.gallery.kicker': "Galeri",
+    'ev.gallery.title': "Etkinlikten Kareler",
+    'ev.debut.p1': "ACM Debut ile döneme ilham dolu bir başlangıç yaptık! Ay Işığı Meydanı'nda gerçekleştirdiğimiz etkinliğimizde arkadaşlarımızla bir araya geldik ve topluluğumuzun vizyonunu paylaştık.",
+    'ev.debut.p2': "Düzenlediğimiz ödüllü yarışma ile keyifli anlar geçirdik. Eğlenceli geçen bu buluşmada enerjisi ve heyecanıyla yanımızda olan tüm katılımcılara teşekkür ederiz.",
+    'ev.debut.sponsors': "Debut etkinliğimize verdiği destek için Kebapçı Ökkeş'e teşekkür ederiz.",
+    'ev.movie.p1': "ACM Movie Night ile keyifli bir akşam geçirdik! Bilgisayar bilimlerinin öncülerinden Alan Turing'in hayatını konu alan \"The Imitation Game\" filmini AKM B Salon'da dev ekranda katılımcılarımızla birlikte büyük bir keyifle izledik.",
+    'ev.movie.p2': "Katılım sağlayan herkese teşekkür ederiz.",
+    'ev.riselab.p1': "Research Bridge: RISE Lab x MED etkinliğimizde araştırma dünyası ile tıbbı aynı salonda buluşturduk. Tıp Fakültesi Morfoloji Binası'nda gerçekleşen etkinlikte RISE Lab'i tanıttık, sunumların ardından soru-cevap bölümünde katılımcılarımızın merak ettiklerini konuştuk.",
+    'ev.riselab.p2': "Etkinliği networking ile tamamladık. Katılım sağlayan herkese ve etkinliğe destek veren paydaşlarımıza teşekkür ederiz.",
+    'ev.riselab.prog1': "RISE Lab tanıtımı, sunumlar, soru-cevap",
+    'ev.riselab.prog2': "Networking",
+    'ev.riselab.partners': "EMSA Muğla, MINDS Congress ve MSKÜ Tıp Öğrencileri Birliği iş birliğiyle düzenlendi.",
+    'ev.riselab.sponsors': "Etkinliğimiz MSKÜ İnova Teknoloji Transfer Ofisi'nin destekleriyle gerçekleşti. Katkılarından dolayı teşekkür ederiz.",
+    'ev.thanks.title': "Destekleri İçin Teşekkürler",
+    'lightbox.close': "Kapat",
+    'lightbox.prev': "Önceki fotoğraf",
+    'lightbox.next': "Sonraki fotoğraf",
     'events.debut.title': "ACM Debut: Tanışma Etkinliği",
-    'events.debut.body': "Ay Işığı Meydanı'nda tanışıyoruz, ardından ödüllü bir yarışmamız var! Şimdi bizimle tanışma zamanı.",
     'events.movie.title': "ACM Movie Night: The Imitation Game",
-    'events.movie.body': "AKM B Salon'da dev ekranda \"The Imitation Game\" gösterimindeyiz. Create. Code. Connect.",
 
     'blog.kicker': "Blog",
     'blog.title': "Medium'daki Yazılarımız",
     'blog.lead': "Chapter üyelerimizin yazdığı teknik makaleleri, etkinlik özetlerini ve deneyim paylaşımlarını Medium üzerinden yayınlıyoruz.",
     'blog.readMore': "Medium'da Okumaya Devam Et",
 
-    'featured.kicker': "Bu Ayın Makalesi",
-    'featured.cta': "Medium'da Oku",
-    'featured.allPosts': "Tüm Yazılar",
 
     'join.kicker': "Aramıza Katıl",
     'join.lead': "Üyelik ücretsizdir ve MSKÜ'de okuyan tüm bölümlerden öğrencilere açıktır. Başvuru formunu doldur; idari işler ekibimiz başvurunu alıp resmi üyelik işlemleri için seninle iletişime geçsin.",
@@ -134,6 +178,10 @@ const TRANSLATIONS = {
     'meta.title.events': "Events · ACM MSKÜ Student Chapter",
     'meta.title.contact': "Contact · ACM MSKÜ Student Chapter",
     'meta.title.blog': "Blog · ACM MSKÜ Student Chapter",
+    'meta.title.ev.debut': "ACM Debut · ACM MSKÜ Student Chapter",
+    'meta.title.ev.movie': "ACM Movie Night · ACM MSKÜ Student Chapter",
+    'meta.title.ev.riselab': "Research Bridge: RISE Lab x MED · ACM MSKÜ Student Chapter",
+    'meta.title.ev.teknopark': "İzmir Teknopark Technical Trip · ACM MSKÜ Student Chapter",
     'skip.link': "Skip to content",
 
     'nav.home': "Home",
@@ -210,27 +258,67 @@ const TRANSLATIONS = {
     'aria.linkedin': "LinkedIn profile",
     'aria.instagram': "Instagram profile",
     'aria.medium': "Medium profile",
+    'aria.github': "GitHub profile",
 
     'events.kicker': "Events",
     'events.title': "Upcoming Events",
-    'events.lead': "Our first events are here! Join us on October 7 to meet, compete, and watch a movie together.",
     'events.date.oct7': "Wednesday, October 7, 2026",
     'events.date.oct7.short': "Wed · October 7",
     'events.all': "See All Events",
     'events.instagram': "View on Instagram",
+    'events.lead': "From workshops to technical trips, follow our community's upcoming events here.",
+    'home.events.title': "Upcoming & Recent Events",
+    'events.date.oct15': "Thursday, October 15, 2026",
+    'events.date.oct15.short': "Thu · October 15",
+    'events.date.oct23': "Friday, October 23, 2026",
+    'events.date.oct23.short': "Fri · October 23",
+    'events.tag.upcoming': "Upcoming",
+    'events.tag.past': "Past",
+    'events.details': "View Details",
+    'events.past.kicker': "Archive",
+    'events.past.title': "Past Events",
+    'events.past.lead': "Browse photos and details from the events we've held.",
+    'events.teknopark.title': "İzmir Teknopark Demo Day & Technical Trip",
+    'events.teknopark.body': "We're experiencing the technology and entrepreneurship ecosystem first-hand! After attending İzmir Teknopark Demo Day at the İYTE Library, we'll visit the office of a company inside Teknopark to get a closer look at the industry. Spots are limited!",
+    'events.teknopark.deadline': "Application deadline: October 16, 23:59",
+    'events.riselab.title': "Research Bridge: RISE Lab x MED",
+    'ev.back': "All Events",
+    'ev.past': "Past Event",
+    'ev.upcoming': "Upcoming Event",
+    'ev.teknopark.p1': "We're heading out on a technical trip to experience the technology and entrepreneurship ecosystem first-hand, including İzmir Teknopark Demo Day and an office visit!",
+    'ev.teknopark.p2': "After joining the excitement of Demo Day at the İYTE Library, we'll visit the office of a company inside Teknopark and get a closer look at the industry. Spots are limited!",
+    'ev.teknopark.prog1': "Demo Day: İYTE Library",
+    'ev.teknopark.prog2': "Office visit to a company at Teknopark",
+    'ev.teknopark.sponsors': "Transportation for our trip is provided by a bus from the Muğla Governorship as part of Muğla Youth Year. We thank them for their support.",
+    'ev.sponsors.kicker': "Supporters",
+    'ev.sponsors.title': "Our Sponsors",
+    'ev.program': "Program",
+    'ev.instagram': "View Announcement Post",
+    'ev.gallery.kicker': "Gallery",
+    'ev.gallery.title': "Moments from the Event",
+    'ev.debut.p1': "We kicked off the semester with an inspiring start at ACM Debut! At Ay Işığı Meydanı, we came together with fellow students and shared our community's vision.",
+    'ev.debut.p2': "We had a great time with our competition with prizes. Thank you to every participant who joined us with their energy and enthusiasm at this fun meetup.",
+    'ev.debut.sponsors': "Thank you to Kebapçı Ökkeş for supporting our Debut event.",
+    'ev.movie.p1': "We had a wonderful evening at ACM Movie Night! Together with our participants, we watched \"The Imitation Game\", the film about the life of computer science pioneer Alan Turing, on the big screen at AKM Hall B.",
+    'ev.movie.p2': "Thank you to everyone who joined us.",
+    'ev.riselab.p1': "At Research Bridge: RISE Lab x MED, we brought research and medicine together in the same room. At the Faculty of Medicine Morphology Building, we introduced RISE Lab and, after the presentations, answered participants' questions in a Q&A session.",
+    'ev.riselab.p2': "We wrapped up the event with networking. Thank you to everyone who attended and to the partners who supported the event.",
+    'ev.riselab.prog1': "RISE Lab introduction, presentations, Q&A",
+    'ev.riselab.prog2': "Networking",
+    'ev.riselab.partners': "Organized in collaboration with EMSA Muğla, MINDS Congress, and the MSKÜ Medical Students' Association.",
+    'ev.riselab.sponsors': "This event was made possible with the support of the MSKÜ İnova Technology Transfer Office. We thank them for their contribution.",
+    'ev.thanks.title': "Thank You for Your Support",
+    'lightbox.close': "Close",
+    'lightbox.prev': "Previous photo",
+    'lightbox.next': "Next photo",
     'events.debut.title': "ACM Debut: Meet & Greet",
-    'events.debut.body': "We're meeting up at Ay Işığı Meydanı, followed by a competition with prizes! It's time to get to know us.",
     'events.movie.title': "ACM Movie Night: The Imitation Game",
-    'events.movie.body': "We're screening \"The Imitation Game\" on the big screen at AKM Hall B. Create. Code. Connect.",
 
     'blog.kicker': "Blog",
     'blog.title': "Our Stories on Medium",
     'blog.lead': "We publish technical articles, event recaps, and experience stories written by our chapter members on Medium.",
     'blog.readMore': "Continue Reading on Medium",
 
-    'featured.kicker': "Article of the Month",
-    'featured.cta': "Read on Medium",
-    'featured.allPosts': "All Articles",
 
     'join.kicker': "Join Us",
     'join.lead': "Membership is free and open to students from every department at MSKÜ. Fill out the application form and our administrative team will reach out to you to complete your official membership.",
@@ -289,7 +377,7 @@ function applyLanguage(lang) {
 // Works across separate HTML pages (each page only has its own sections),
 // so this replaces per-section scroll observation with simple page+hash matching.
 function setActiveNavLink(navLinks) {
-  const currentPage = location.pathname.split('/').pop() || 'index.html';
+  const currentPage = document.body.getAttribute('data-nav-page') || location.pathname.split('/').pop() || 'index.html';
   let currentHash = location.hash;
   if (currentPage === 'index.html' && !currentHash) currentHash = '#anasayfa';
 
@@ -356,7 +444,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-reveal]').forEach(el => revealObserver.observe(el));
 
+  // Lightbox for event photos
+  initLightbox();
+
   // Footer year
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 });
+
+// Opens [data-lightbox] links in a full-screen overlay with prev/next navigation.
+function initLightbox() {
+  const links = Array.from(document.querySelectorAll('a[data-lightbox]'));
+  if (!links.length) return;
+
+  const t = key => (TRANSLATIONS[document.documentElement.lang] || TRANSLATIONS.tr)[key];
+  const icon = d => `<svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="${d}" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+
+  const box = document.createElement('div');
+  box.className = 'lightbox';
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-modal', 'true');
+  box.innerHTML = `
+    <img alt="">
+    <button type="button" class="lightbox-btn lightbox-close">${icon('M6 6L18 18M18 6L6 18')}</button>
+    <button type="button" class="lightbox-btn lightbox-prev">${icon('M15 5L8 12L15 19')}</button>
+    <button type="button" class="lightbox-btn lightbox-next">${icon('M9 5L16 12L9 19')}</button>`;
+  document.body.appendChild(box);
+
+  const img = box.querySelector('img');
+  const closeBtn = box.querySelector('.lightbox-close');
+  const prevBtn = box.querySelector('.lightbox-prev');
+  const nextBtn = box.querySelector('.lightbox-next');
+  let index = 0;
+
+  const show = i => {
+    index = (i + links.length) % links.length;
+    const thumb = links[index].querySelector('img');
+    img.src = links[index].getAttribute('href');
+    img.alt = thumb ? thumb.alt : '';
+  };
+  const open = i => {
+    closeBtn.setAttribute('aria-label', t('lightbox.close'));
+    prevBtn.setAttribute('aria-label', t('lightbox.prev'));
+    nextBtn.setAttribute('aria-label', t('lightbox.next'));
+    prevBtn.hidden = nextBtn.hidden = links.length < 2;
+    show(i);
+    box.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  };
+  const close = () => {
+    box.classList.remove('is-open');
+    document.body.style.overflow = '';
+    links[index].focus();
+  };
+
+  links.forEach((link, i) => link.addEventListener('click', e => { e.preventDefault(); open(i); }));
+  closeBtn.addEventListener('click', close);
+  prevBtn.addEventListener('click', () => show(index - 1));
+  nextBtn.addEventListener('click', () => show(index + 1));
+  box.addEventListener('click', e => { if (e.target === box) close(); });
+  document.addEventListener('keydown', e => {
+    if (!box.classList.contains('is-open')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') show(index - 1);
+    if (e.key === 'ArrowRight') show(index + 1);
+  });
+}

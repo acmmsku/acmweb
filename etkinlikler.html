@@ -59,36 +59,64 @@
 
 <main id="icerik">
 
-  <!-- ============ ETKİNLİKLER ============ -->
+  <!-- ============ YAKLAŞAN ETKİNLİKLER ============ -->
   <section id="etkinlikler" class="section section--top">
     <div class="section-head" data-reveal>
       <span class="kicker" data-i18n="events.kicker">Etkinlikler</span>
       <h2 data-i18n="events.title">Yaklaşan Etkinlikler</h2>
       <p class="section-lead" data-i18n="events.lead">
-        İlk etkinliklerimizle geliyoruz! Tanışmak, yarışmak ve birlikte film izlemek için 7 Ekim'de herkesi bekliyoruz.
+        Atölyelerden teknik gezilere, topluluğumuzun yaklaşan etkinliklerini buradan takip edebilirsin.
       </p>
     </div>
-    <div class="blog-grid event-grid">
-
+    <div class="event-upcoming">
       <article class="blog-card event-card" data-reveal>
-        <div class="blog-card-cover event-card-cover"><img src="assets/img/events/debut.jpeg" alt="ACM Debut etkinlik afişi"></div>
+        <a class="blog-card-cover event-card-cover" href="etkinlik-teknopark.html"><img src="assets/img/events/teknopark.jpeg" alt="İzmir Teknopark teknik gezi afişi"></a>
         <div class="blog-card-body">
           <ul class="event-card-meta">
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 3V6M16 3V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-i18n="events.date.oct7">7 Ekim 2026, Çarşamba</span></li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>17.30</span></li>
-            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.87 2 12 2C8.13 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg><span>Ay Işığı Meydanı</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 3V6M16 3V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-i18n="events.date.oct23">23 Ekim 2026, Cuma</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.87 2 12 2C8.13 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg><span>İzmir Teknopark</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3V5M12 19V21M5 12H3M21 12H19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M8 4.5H16V8L12 12L8 8V4.5ZM8 19.5H16V16L12 12L8 16V19.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg><span data-i18n="events.teknopark.deadline">Son başvuru: 16 Ekim, 23.59</span></li>
           </ul>
-          <h3 data-i18n="events.debut.title">ACM Debut: Tanışma Etkinliği</h3>
-          <p data-i18n="events.debut.body">Ay Işığı Meydanı'nda tanışıyoruz, ardından ödüllü bir yarışmamız var! Şimdi bizimle tanışma zamanı.</p>
-          <a href="https://www.instagram.com/p/DeE9xq8q6TC/" class="btn btn-soft" target="_blank" rel="noopener">
-            <span data-i18n="events.instagram">Instagram'da Gör</span>
+          <h3 data-i18n="events.teknopark.title">İzmir Teknopark Demo Day ve Teknik Gezi</h3>
+          <p data-i18n="events.teknopark.body">Teknoloji ve girişimcilik ekosistemini yerinde deneyimliyoruz! İYTE Kütüphanesi'nde gerçekleşecek İzmir Teknopark Demo Day'e katıldıktan sonra Teknopark içerisindeki bir şirketin ofisini ziyaret ederek sektörü yakından tanıyacağız. Kontenjanlar sınırlı!</p>
+          <a href="etkinlik-teknopark.html" class="btn btn-soft">
+            <span data-i18n="events.details">Detayları Gör</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ GEÇMİŞ ETKİNLİKLER ============ -->
+  <section id="gecmis-etkinlikler" class="section event-past-section">
+    <div class="section-head" data-reveal>
+      <span class="kicker" data-i18n="events.past.kicker">Arşiv</span>
+      <h2 data-i18n="events.past.title">Geçmiş Etkinlikler</h2>
+      <p class="section-lead" data-i18n="events.past.lead">
+        Gerçekleştirdiğimiz etkinliklerin fotoğraflarına ve detaylarına göz at.
+      </p>
+    </div>
+    <div class="event-grid--past">
+
+      <article class="blog-card event-card" data-reveal>
+        <a class="blog-card-cover event-card-cover" href="etkinlik-riselab.html"><img src="assets/img/events/riselabevent.jpg" alt="Research Bridge: RISE Lab x MED etkinlik afişi"></a>
+        <div class="blog-card-body">
+          <ul class="event-card-meta">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 3V6M16 3V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-i18n="events.date.oct15">15 Ekim 2026, Perşembe</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>12.30 – 14.00</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.87 2 12 2C8.13 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg><span>Tıp Fakültesi Morfoloji Binası Amfi 2</span></li>
+          </ul>
+          <h3 data-i18n="events.riselab.title">Research Bridge: RISE Lab x MED</h3>
+          <a href="etkinlik-riselab.html" class="btn btn-soft">
+            <span data-i18n="events.details">Detayları Gör</span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
       </article>
 
       <article class="blog-card event-card" data-reveal>
-        <div class="blog-card-cover event-card-cover"><img src="assets/img/events/movie-night.jpeg" alt="ACM Movie Night etkinlik afişi"></div>
+        <a class="blog-card-cover event-card-cover" href="etkinlik-movie-night.html"><img src="assets/img/events/movie-night.jpeg" alt="ACM Movie Night etkinlik afişi"></a>
         <div class="blog-card-body">
           <ul class="event-card-meta">
             <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 3V6M16 3V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-i18n="events.date.oct7">7 Ekim 2026, Çarşamba</span></li>
@@ -96,9 +124,24 @@
             <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.87 2 12 2C8.13 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg><span>AKM B Salon</span></li>
           </ul>
           <h3 data-i18n="events.movie.title">ACM Movie Night: The Imitation Game</h3>
-          <p data-i18n="events.movie.body">AKM B Salon'da dev ekranda "The Imitation Game" gösterimindeyiz. Create. Code. Connect.</p>
-          <a href="https://www.instagram.com/p/DeFA6bcKyRY/" class="btn btn-soft" target="_blank" rel="noopener">
-            <span data-i18n="events.instagram">Instagram'da Gör</span>
+          <a href="etkinlik-movie-night.html" class="btn btn-soft">
+            <span data-i18n="events.details">Detayları Gör</span>
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="blog-card event-card" data-reveal>
+        <a class="blog-card-cover event-card-cover" href="etkinlik-debut.html"><img src="assets/img/events/debut.jpeg" alt="ACM Debut etkinlik afişi"></a>
+        <div class="blog-card-body">
+          <ul class="event-card-meta">
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="M3 9H21M8 3V6M16 3V6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg><span data-i18n="events.date.oct7">7 Ekim 2026, Çarşamba</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>17.30</span></li>
+            <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 21C12 21 19 14.5 19 9.5C19 5.36 15.87 2 12 2C8.13 2 5 5.36 5 9.5C5 14.5 12 21 12 21Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" stroke="currentColor" stroke-width="1.6"/></svg><span>Ay Işığı Meydanı</span></li>
+          </ul>
+          <h3 data-i18n="events.debut.title">ACM Debut: Tanışma Etkinliği</h3>
+          <a href="etkinlik-debut.html" class="btn btn-soft">
+            <span data-i18n="events.details">Detayları Gör</span>
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7H12M12 7L7.5 2.5M12 7L7.5 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </a>
         </div>
